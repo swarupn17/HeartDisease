@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Sound Analyzer</title>
+</head>
+<body>
+
+<h2>Upload Heart Sound (.wav)</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Analyze</button>
+</form>
+
+{% if result %}
+    <h3>Prediction: {{ result }}</h3>
+
+    {% if subclass is not none %}
+        <p>Subclass: {{ subclass }}</p>
+    {% endif %}
+
+    <h3>Explanation (Grad-CAM)</h3>
+    <img src="{{ url_for('static', filename=image) }}" width="300">
+{% endif %}
+
+</body>
+</html>

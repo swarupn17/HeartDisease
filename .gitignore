@@ -1,0 +1,31 @@
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
+# Large or generated artifacts
+temp.wav
+dataset/
+models/
+frontend/node_modules/
+frontend/dist/
+static/output.png
+static/report_images/
+
+# Python and notebook caches
+*.pyc
+*.pyo
+*.pyd
+
+# Model/export artifacts
+*.keras
+*.h5
+*.pt
+*.pth
+*.onnx
+.env

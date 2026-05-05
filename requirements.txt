@@ -1,0 +1,12 @@
+Flask>=3.0,<4
+numpy>=1.26,<3
+tensorflow>=2.16,<3
+matplotlib>=3.8,<4
+librosa>=0.10,<1
+opencv-python>=4.9,<5
+soundfile>=0.12,<1
+google-generativeai>=0.3,<1
+python-dotenv>=1.0,<2
+torch>=2.0,<3
+transformers>=4.36,<5
+# Optional: scipy for additional signal processing
